@@ -7,13 +7,13 @@ particlesJS("particles-js", {
                 value_area: 800
             }
         },
-        color: { value: "#BD500E" },
+        color: { value: "#E26417" },
         shape: {
             type: "polygon",
             polygon: { nb_sides: 6 }
         },
         opacity: {
-            value: 0.3,
+            value: 0.4,
             random: true,
             anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false }
         },
