@@ -1,0 +1,307 @@
+:root {
+  --black: #000;
+  --charcoal: #0e0e0e;
+  --light: #efefef;
+  --ash: #999;
+  --satan: #666;
+  --blood: #e50914;
+  --spotify: #1db954;
+  --discord: #7289da;
+  --facebook: #1778f2;
+  font-size: 16px;
+  line-height: 1.7rem;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: var(--charcoal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 2.5rem;
+  margin: 0;
+  font-family: "Inter Black", sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: var(--blood);
+  text-decoration: none;
+}
+
+a.icon-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a.icon-link img {
+  margin-right: 0.5rem;
+}
+
+a.button,
+button {
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  background-color: var(--charcoal);
+  color: white;
+  font-family: "Inter Black", sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1rem;
+  width: calc(50% - 1rem);
+  max-width: 30rem;
+}
+
+a.button img,
+button img {
+  margin-right: 1.5rem;
+}
+
+a.spotify {
+  color: var(--spotify);
+}
+
+a.discord {
+  color: white;
+  background-color: var(--discord);
+}
+
+a.facebook {
+  color: var(--facebook);
+  background-color: white;
+}
+
+section {
+  padding: 0 10rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col {
+  padding: 64px 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  max-width: 50%;
+  position: relative;
+}
+
+.btn-row {
+  justify-content: start;
+  align-items: stretch;
+}
+
+/* Header */
+#header {
+  background-color: #0f0800;
+  position: relative;
+  height: 35rem;
+}
+
+#header .overlay {
+  position: absolute;
+  padding-top: 5rem;
+  padding-left: 25rem;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.66),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+#header .header-img {
+  position: absolute;
+  user-select: none;
+  left: 10rem;
+  width: 20rem;
+}
+
+#header h1 {
+  margin-bottom: 4rem;
+}
+
+/* Metalcodex */
+.metalcodex {
+  border-top: solid 24px #fff;
+  background: url(/assets/metalcodex_bg.png);
+  background-size: cover;
+  position: relative;
+}
+
+.metalcodex .mockup {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* recommendation */
+.recommendation {
+  color: var(--charcoal);
+  background-color: var(--light);
+}
+
+.recommendation .col {
+  justify-content: center;
+}
+
+.row-recommendation {
+  justify-content: start;
+  align-items: center;
+}
+
+.recommendation .thumbnail {
+  width: 16rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  margin-right: 2rem;
+}
+
+.recommendation p {
+  margin: 0;
+}
+
+.recommendation .song {
+  color: var(--black);
+  font-family: "Inter Black", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.recommendation .artist {
+  color: var(--charcoal);
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+}
+
+.recommendation .album {
+  color: var(--ash);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Community */
+.community {
+  background: url(/assets/gmm.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* Subfooter */
+.subfooter {
+  background-color: var(--black);
+  color: var(--ash);
+  line-height: 0.5rem;
+}
+
+.subfooter img {
+  filter: drop-shadow(0 0 0.2rem var(--satan));
+  width: 4rem;
+  padding: 4rem;
+  margin-left: 10rem;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  color: var(--ash);
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Breakpoints */
+@media only screen and (max-width: 1280px) {
+  section {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .col {
+    padding: 2rem 0;
+    max-width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  #header .overlay {
+    padding: 2rem;
+  }
+
+  #header .header-img {
+    display: none;
+  }
+
+  .metalcodex {
+    padding-bottom: 0;
+  }
+
+  .mockup-col {
+    padding: 0;
+  }
+
+  .metalcodex .mockup {
+    max-width: 20rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .recommendation .thumbnail {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .btn-row {
+    flex-direction: column;
+  }
+
+  button,
+  a.button {
+    width: 100%;
+  }
+
+  .subfooter img {
+    margin: 0;
+    padding: 4rem 2rem;
+  }
+}

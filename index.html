@@ -1,22 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
     <title>Satanica</title>
-</head>
+  </head>
 
-<body>
-    <div id="particles-js">
-        <div class="overlay">
-            <h1>Coming soon...</h1>
+  <body>
+    <header id="header">
+      <section class="overlay">
+        <img class="header-img" src="assets/schild.png" alt="Schild Satanica" />
+        <div class="col">
+          <h1>Satanica</h1>
+          <p>Satanica is dé studentenclub voor metalheads in Gent!</p>
+          <p>
+            Iedereen is natuurlijk welkom, maar onze primaire doelgroep is
+            studenten in Gent met een appreciatie voor oorverdovende
+            gitaarriffs, galopperende basslines en de duistere tonen van heavy
+            metal en zijn subgenres.
+          </p>
         </div>
-    </div>
-    <script src="particles.js"></script>
-    <script src="scripts.js"></script>
-</body>
+      </section>
+    </header>
 
+    <section class="metalcodex">
+      <div class="col">
+        <h2>Satanica's Metalcodex</h2>
+        <p>
+          De Metalcodex-app bevat alle nummers en songteksten uit de officiële
+          Spotify-afspeellijst van Satanica. Krijg snel toegang tot uw
+          persoonlijke favorieten en maak er een bladwijzer van, raise your
+          horns and sing your heart out! 🤘
+        </p>
+
+        <div class="btn-row">
+          <a
+            href="https://play.google.com/store/apps/details?id=be.satanica.metalcodex"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            <img src="assets/icons/google_play.png" alt="Google Play" />
+            Gratis op Google Play
+          </a>
+        </div>
+      </div>
+      <div class="col mockup-col">
+        <img class="mockup" src="assets/mockup.png" alt="Metalcodex mockup" />
+      </div>
+    </section>
+
+    <section class="recommendation">
+      <div class="col">
+        <div class="row row-recommendation">
+          <img
+            class="thumbnail"
+            src="https://i.scdn.co/image/ab67616d00001e024c9fc157cd0b0ce4196f9aeb"
+            alt="One - Metallica"
+          />
+          <div>
+            <h2 class="song">One</h2>
+            <p class="artist">Metallica</p>
+            <p class="album">...And Justice For All</p>
+            <a
+              class="spotify icon-link"
+              href="https://open.spotify.com/track/790jZbOfjDsMjeWpxQ0H9T"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icons/spotify.png" alt="Spotify" />
+              Listen on Spotify
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p>
+          Dit is slechts een van de 168 nummers uit onze eigen Metalcodex. Alle
+          nummers zijn zorgvuldig geselecteerd en maken deel uit van onze
+          officiële
+          <a
+            href="https://open.spotify.com/playlist/58SYxmrrBNQXKvzxXVA04X"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="spotify"
+            >Spotify playlist</a
+          >.
+        </p>
+        <p>
+          Niet overtuigd? <a href="#" class="refresh">Klik hier</a> om een ander
+          nummer te bekijken.
+        </p>
+      </div>
+    </section>
+
+    <section class="community">
+      <div class="col">
+        <h2>Onze ijzersterke community</h2>
+        <p>
+          De metal gemeenschap is al sinds jaar en dag ongeëvenaard in zowel de
+          muziekwereld als daarbuiten als een van de sterkste.
+        </p>
+        <p>
+          Wij vinden het belangrijk om onze leden en geïnteresseerden een plaats
+          te bieden om zich te verenigen met mensen die dezelfde passie voor
+          muziek bezitten.
+        </p>
+
+        <div class="row btn-row">
+          <a
+            href="https://discord.gg/Jdxqrk2"
+            class="button discord"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/icons/discord.png" alt="Discord" />
+            Join our Discord
+          </a>
+
+          <a
+            href="https://www.facebook.com/Satanica-111474740374553/"
+            class="button facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/icons/facebook.png" alt="Facebook" />
+            Like us on Facebook
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="subfooter">
+      <div class="row">
+        <div class="footer-img">
+          <img src="assets/schild.png" alt="Schild Satanica" />
+        </div>
+        <div class="col">
+          <h3>Ons clubcafé</h3>
+          <p>'t Genoegen</p>
+          <p>Overpoortstraat 88</p>
+          <p>9000 Gent</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      2020 © Satanica - All images are property of their respective owners, no
+      copyright infringement intended.
+    </footer>
+    <script src="scripts/particles-min.js"></script>
+    <script src="scripts/scripts.js"></script>
+  </body>
 </html>
