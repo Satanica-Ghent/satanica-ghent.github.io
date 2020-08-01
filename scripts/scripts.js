@@ -1,11 +1,9 @@
 // Recommendation
-
 const thumbnail = document.querySelector(".thumbnail");
 const song = document.querySelector(".song");
 const artist = document.querySelector(".artist");
 const album = document.querySelector(".album");
 const spotify = document.querySelector(".spotify");
-
 const refresh = document.querySelector(".refresh");
 
 const loadSong = async () => {
@@ -30,7 +28,6 @@ refresh.addEventListener("click", (e) => {
 loadSong();
 
 // Particles
-
 particlesJS("header", {
   particles: {
     number: {
