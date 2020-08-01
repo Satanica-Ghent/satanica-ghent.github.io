@@ -11,7 +11,7 @@ const refresh = document.querySelector(".refresh");
 const loadSong = async () => {
   const json = await fetch("/api/songs.json");
   const songs = await json.json();
-  const i = Math.floor(Math.random() * songs.length);
+  const i = Math.floor(Math.random() * songs.length - 1);
 
   thumbnail.src = songs[i].thumbnail_medium;
   thumbnail.alt = `${songs[i].name} - ${songs[i].artist}`;
