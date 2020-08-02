@@ -6,9 +6,15 @@ const album = document.querySelector(".album");
 const spotify = document.querySelector(".spotify");
 const refresh = document.querySelector(".refresh");
 
-const loadSong = async () => {
+let songs = [];
+
+const loadSongs = async () => {
   const json = await fetch("/api/songs.json");
-  const songs = await json.json();
+  songs = await json.json();
+  loadSong();
+};
+
+const loadSong = () => {
   const i = Math.floor(Math.random() * songs.length - 1);
 
   thumbnail.src = songs[i].thumbnail_medium;
@@ -25,7 +31,8 @@ refresh.addEventListener("click", (e) => {
   loadSong();
 });
 
-loadSong();
+// Load songs on load
+loadSongs();
 
 // Particles
 particlesJS("header", {
