@@ -5,12 +5,14 @@ const artist = document.querySelector(".artist");
 const album = document.querySelector(".album");
 const spotify = document.querySelector(".spotify");
 const refresh = document.querySelector(".refresh");
+const playlistLength = document.querySelector(".playlist-length");
 
 let songs = [];
 
 const loadSongs = async () => {
   const json = await fetch("/api/songs.json");
   songs = await json.json();
+  playlistLength.innerHTML = songs.length;
   loadSong();
 };
 
