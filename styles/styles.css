@@ -69,14 +69,15 @@ button {
   text-transform: uppercase;
   background-color: var(--charcoal);
   color: white;
-  font-family: "Inter Black", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 1rem;
   width: calc(50% - 1rem);
-  max-width: 30rem;
+  max-width: 22rem;
 }
 
 a.button img,
